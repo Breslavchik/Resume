@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/fon-bumaga.jpg);
+    font-family: "Raleway", sans-serif;
+    margin: 30px;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        display: block;
+    }
+}
+
+.header {
+    display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // margin: 30px ;
+    // margin-left: auto;
+    // margin-right: auto;
+    align-items: center;
+
+    img {
+        // width: 307px;
+        // height: 468px;
+        width: 306px;
+        height: 306px;
+        border-radius: 50%;
+        // border-style: double;
+        border: 10px double black;
+    }
+    div {
+        padding-left: 40px;
+    }
+}
+
+.progress {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    a {
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+}
