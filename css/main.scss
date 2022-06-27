@@ -5,22 +5,18 @@
 body {
     background-image: url(images/fon-bumaga.jpg);
     font-family: "Raleway", sans-serif;
-    margin: 30px;
+    margin: 30px 50px 30px 30px;
     a {
         text-decoration: none;
         font-weight: bold;
         color: black;
         display: block;
+        padding-right: 10px;
     }
 }
 
 .header {
     display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // margin: 30px ;
-    // margin-left: auto;
-    // margin-right: auto;
     align-items: center;
 
     img {
@@ -29,7 +25,6 @@ body {
         width: 306px;
         height: 306px;
         border-radius: 50%;
-        // border-style: double;
         border: 10px double black;
     }
     div {
@@ -51,4 +46,37 @@ body {
         padding-right: 10px;
         padding-top: 10px;
     }
+}
+.portfolio {
+    a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top: 1px dashed black;
+    }
+    .first-link {
+        padding-top: 0;
+        border: 0;
+    }
+
+    p {
+       margin:10px 0;
+    }
+    h4 {
+        margin: 10px 0 0 0;
+    }
+    ul {
+        margin-top: 10px;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+footer {
+    border-top: 3px solid black;
+    margin-top: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
