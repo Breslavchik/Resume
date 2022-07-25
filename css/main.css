@@ -37,25 +37,29 @@ body a {
   padding-left: 40px;
 }
 
-.progress {
+.education ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.education li {
+  padding-bottom: 10px;
+}
+
+.education a {
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.education .progress {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.progress ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.progress li {
-  padding-bottom: 10px;
-}
-
-.progress a {
-  padding-right: 10px;
-  padding-top: 10px;
+.education .institution {
+  display: none;
 }
 
 .portfolio a {
@@ -98,5 +102,61 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 900px) {
+  html {
+    overflow: auto;
+  }
+  body {
+    margin: 10px;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header img {
+    width: 75%;
+    height: 75%;
+  }
+  .header div {
+    padding-left: 0;
+    text-align: center;
+  }
+  .about h2 {
+    text-align: center;
+  }
+  .about p {
+    text-align: justify;
+  }
+  .education .progress {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .education .progress .only-dekstop {
+    display: none;
+  }
+  .education .institution {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio h2 {
+    text-align: center;
+  }
+  .contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts span {
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

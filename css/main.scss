@@ -1,3 +1,5 @@
+@import 'mobile';
+
 * {
     box-sizing: border-box;
 }
@@ -20,8 +22,6 @@ body {
     align-items: center;
 
     img {
-        // width: 307px;
-        // height: 468px;
         width: 306px;
         height: 306px;
         border-radius: 50%;
@@ -32,9 +32,7 @@ body {
     }
 }
 
-.progress {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.education {
     ul {
         list-style-type: none;
         padding-left: 0;
@@ -45,8 +43,19 @@ body {
     a {
         padding-right: 10px;
         padding-top: 10px;
+    } 
+
+    .progress {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .institution {
+        display: none;
     }
 }
+
+
 .portfolio {
     a {
         padding-top: 5px;
@@ -80,3 +89,67 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 900px) {
+    html {
+        overflow: auto;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    .header {
+      flex-direction: column;
+        img {
+            width: 75%;
+            height: 75%;
+        }
+        div {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+    .about {
+       h2 {
+        text-align: center;
+     } 
+        p {
+            text-align: justify;
+        }
+    }
+
+    .education {
+        .progress {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+    
+            .only-dekstop {
+                display: none;
+            }
+        }
+    
+        .institution {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+           }
+    }
+
+    .portfolio {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .contacts {
+        flex-wrap: wrap;
+        justify-content: center;
+        span {
+            margin-right: 10px;
+        }       
+    }
+}
+
